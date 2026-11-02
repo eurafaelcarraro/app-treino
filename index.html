@@ -62,7 +62,7 @@ body.has-sheet #app{transform:translateY(calc(var(--sat) * .4 + 4px)) scale(.92)
 .lt .sub{font-size:15px;color:var(--t2);margin-top:4px}
 
 /* tab bar */
-#tabbar{position:absolute;left:0;right:0;bottom:0;z-index:30;height:calc(var(--tabh) + var(--sab));padding-bottom:var(--sab);display:flex;background:rgba(16,16,16,.8);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);border-top:.5px solid var(--line)}
+#tabbar{position:absolute;left:0;right:0;bottom:0;z-index:30;height:calc(var(--tabh) + var(--sab));padding-bottom:calc(var(--sab) * .12);display:flex;background:rgba(16,16,16,.8);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);border-top:.5px solid var(--line)}
 .tab{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;font-size:10px;font-weight:500;color:var(--gray);letter-spacing:.1px}
 .tab svg{width:25px;height:25px}
 .tab.on{color:var(--t1)}
@@ -337,7 +337,7 @@ textarea.input{height:auto;min-height:92px;padding:12px 0;resize:none;line-heigh
 
 <script>
 'use strict';
-const APP_VERSION = '1.0.4';
+const APP_VERSION = '1.0.5';
 
 /* ---------- utils ---------- */
 const $ = (s, r = document) => r.querySelector(s);
